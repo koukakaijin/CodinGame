@@ -30,10 +30,10 @@ loop do
     elsif (x<0 && y==0) 
         puts "W"
         $initialTX=$initialTX-1
-    elsif (x=0 && y>0) 
+    elsif (x==0 && y>0) 
         puts "S"
         $initialTY=$initialTY+1
-    elsif (x=0 && y<0) 
+    elsif (x==0 && y<0) 
         puts "N"
         $initialTY=$initialTY-1
     end
