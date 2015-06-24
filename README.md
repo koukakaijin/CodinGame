@@ -1,2 +1,2 @@
 # CodinGame
-CodinGame
+CodinGame code solutions
