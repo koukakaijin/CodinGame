@@ -11,38 +11,15 @@ loop do
         a << $MH
     end
     c = a.index(a.max)
-    STDERR.puts c
-    STDERR.puts b
     
     if d == 0
-        if (c == b)
-            puts "FIRE"
-            b=b+1
-        else
-            puts "HOLD"
-            b=b+1
-        end
+        puts c == b ? "FIRE" : "HOLD"
+        b=b+1
     else
-        if (c == b-1)
-            puts "FIRE"
-            b=b-1
-        else
-            puts "HOLD"
-            b=b-1
-        end
+        puts c == b-1 ? "FIRE" : "HOLD"
+        b=b-1
     end
-    if b == 8
-        if d==0
-            d=1
-        else
-            d=0
-        end
-    end
-    if b == 0
-        if d==0
-            d=1
-        else
-            d=0
-        end
+    if (b == 8 || b == 0)
+        d==0 ? d=1 : d=0 
     end
 end
