@@ -1,0 +1,1 @@
+STDOUT.sync=true;z,w,a,b=gets.split(" ").collect{|x|x.to_i};loop do;x=z-a;y=w-b;if(y==0);puts x>0?"E":"W";x>0?a+=1:a-=1;elsif(x==0);puts y>0?"S":"N";y>0?b+=1:b-=1;elsif(x>0);puts y>0?"SE":"NE";y>0?b+=1:b-=1;a+=1;else;puts y>0?"SW":"NW";y>0?b+=1:b-=1;a-=1;end;end
